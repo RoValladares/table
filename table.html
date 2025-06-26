@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table{
+            border: 1px solid;
+            width: 50%;
+        }
+        th {
+            height: 70px;
+        }
+        td, th {
+            border-bottom: 1px solid gray;
+        }
+        tr:hover {
+            background-color: rgb(38, 35, 231);
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 50vw;
+             margin: 2rem auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+                <th>Nacionalidad</th>
+            </tr>
+            <tbody>
+                <tr>
+                   <td>Jose</td> 
+                   <td>Garcia</td>
+                   <td>31</td>
+                   <td rowspan="3">Salvadoreña</td>
+                </tr>
+                <tr>
+                   <td>Jose</td> 
+                   <td>Garcia</td>
+                   <td>31</td>
+                </tr>
+                <tr>
+                   <td>Jose</td> 
+                   <td>Garcia</td>
+                   <td>31</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
